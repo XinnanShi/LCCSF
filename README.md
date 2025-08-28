@@ -1,5 +1,3 @@
-#LCCSF
-
 **Prerequisite:**
 
 - Python 3.8+
