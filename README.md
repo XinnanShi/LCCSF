@@ -75,6 +75,7 @@ CUDA_VISIBLE_DEVICES=6 python LCCSF/eval_vos.py dataset=[d17-val/d17-test-dev/y1
 
 If you want to use other datasets, please add it on LCCSF/LCCSF/config/evalbase.yaml
 
+You can get our weights at: https://github.com/XinnanShi/LCCSF/releases/tag/v1.0
 
 Some paths and variables in the code may cause issues depending on the system. Please adjust them by yourself
 
