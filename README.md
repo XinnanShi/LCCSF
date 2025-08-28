@@ -69,9 +69,9 @@ For the LVOS validation set, pre-process it by keeping only the first annotation
 python scripts/data/preprocess_lvos.py ../LVOS/valid/Annotations ../LVOS/valid/Annotations_first_only
 ```
 ## Evaluation Command
-'''
+```
 CUDA_VISIBLE_DEVICES=6 python LCCSF/eval_vos.py dataset=[d17-val/d17-test-dev/y18-val/y19-val/...] weights=./output/test3/test3_main_training_last.pth model=base 
-'''
+```
 
 If you want to use other datasets, please add it on LCCSF/LCCSF/config/evalbase.yaml
 
