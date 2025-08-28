@@ -70,10 +70,10 @@ python scripts/data/preprocess_lvos.py ../LVOS/valid/Annotations ../LVOS/valid/A
 ```
 ## Evaluation Command
 ```
-CUDA_VISIBLE_DEVICES=6 python LCCSF/eval_vos.py dataset=[d17-val/d17-test-dev/y18-val/y19-val/...] weights=./output/test3/test3_main_training_last.pth model=base 
+CUDA_VISIBLE_DEVICES=6 python LCCSF/eval_vos.py dataset=[d17-val/d17-test-dev/y18-val/y19-val/...] weights=./weights/DAVIS.pth model=base 
 ```
 
-If you want to use other datasets, please add it on LCCSF/LCCSF/config/evalbase.yaml
+If you want to use other datasets, please add it on LCCSF/LCCSF/config/eval_config.yaml
 
 You can get our weights at: https://github.com/XinnanShi/LCCSF/releases/tag/v1.0
 
