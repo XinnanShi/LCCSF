@@ -18,9 +18,9 @@ pip install -e .
 
 (If you encounter the File "setup.py" not found error, upgrade your pip with pip install --upgrade pip)
 
-## Training and Evaluation
-## Training
-# Setting Up Data
+# Training and Evaluation
+# Training
+## Setting Up Data
 
 The Datasets should list on the folder where main folder"LCCSF" in.
 
@@ -58,8 +58,8 @@ OMP_NUM_THREADS=4 torchrun --master_port 25357 --nproc_per_node=4 LCCSF/train.py
 OMP_NUM_THREADS=4 CUDA_VISIBLE_DEVICES=4 torchrun --nproc_per_node=1 LCCSF/train.py exp_id=test model=base data=base weights=weights/DAVIS.pth pre_training.enabled=False
 
 
-## Evaluation
-# Setting Up Data
+# Evaluation
+## Setting Up Data
 For the LVOS validation set, pre-process it by keeping only the first annotations:
 
 ```bash
