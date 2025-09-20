@@ -17,8 +17,8 @@ def get_parameter_groups(model, stage_cfg, print_log=False):
     embed_params = []
     other_params = []
     abc = []
-    FRFN = []
-    EDFFN = []
+    HCD = []
+    LFFT = []
 
     embedding_names = ['summary_pos', 'query_init', 'query_emb', 'obj_pe']
     embedding_names = [e + '.weight' for e in embedding_names]
@@ -43,13 +43,13 @@ def get_parameter_groups(model, stage_cfg, print_log=False):
                 abc.append(param)
                 log.info(f'{name} counted as a abc parameter.')
                 continue
-            if name2.startswith('FRFN'):
-                FRFN.append(param)
-                log.info(f'{name} counted as a FRFN parameter.')
+            if name2.startswith('HCD'):
+                HCD.append(param)
+                log.info(f'{name} counted as a HCD parameter.')
                 continue
-            if name2.startswith('EDFFN'):
-                EDFFN.append(param)
-                log.info(f'{name} counted as a EDFFN parameter.')
+            if name2.startswith('LFFT'):
+                LFFT.append(param)
+                log.info(f'{name} counted as a LFFT parameter.')
                 continue
             backbone_params.append(param)
             inserted = True
