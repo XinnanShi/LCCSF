@@ -70,7 +70,7 @@ python scripts/data/preprocess_lvos.py ../LVOS/valid/Annotations ../LVOS/valid/A
 ```
 ## Evaluation Command
 ```
-CUDA_VISIBLE_DEVICES=6 python LCCSF/eval_vos.py dataset=[d17-val/d17-test-dev/y18-val/y19-val/...] weights=./weights/DAVIS.pth model=base 
+CUDA_VISIBLE_DEVICES=6 python LCCSF/eval_vos.py dataset=[d17-val/d17-test-dev/y18-val/y19-val/...] weights=./weights/DAVIS.pth model=base --config-name eval_plus_config.yaml
 ```
 
 If you want to use other datasets, please add it on LCCSF/LCCSF/config/eval_config.yaml
