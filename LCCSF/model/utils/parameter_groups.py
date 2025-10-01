@@ -79,12 +79,12 @@ def get_parameter_groups(model, stage_cfg, print_log=False):
             'weight_decay': weight_decay
         },
         {
-            'params': FRFN,
+            'params': HCD,
             'lr': base_lr * backbone_lr_ratio ,
             'weight_decay': weight_decay
         },
         {
-            'params': EDFFN,
+            'params': LFFT,
             'lr': base_lr * backbone_lr_ratio ,
             'weight_decay': weight_decay
         },
